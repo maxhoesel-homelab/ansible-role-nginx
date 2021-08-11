@@ -1,0 +1,7 @@
+nginx_homelab_status_vhost_template: server-status.conf.j2
+nginx_homelab_status_vhost_file: server-status.conf
+nginx_homelab_status_port: 10055
+
+nginx_homelab_vhosts:
+  - filename: "{{ nginx_homelab_status_vhost_file }}"
+    template: "{{ nginx_homelab_status_vhost_template }}"
