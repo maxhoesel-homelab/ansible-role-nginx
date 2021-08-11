@@ -5,3 +5,4 @@ nginx_homelab_status_port: 10055
 nginx_homelab_vhosts:
   - filename: "{{ nginx_homelab_status_vhost_file }}"
     template: "{{ nginx_homelab_status_vhost_template }}"
+    server_name: "127.0.0.1"
