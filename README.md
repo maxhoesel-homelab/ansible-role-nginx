@@ -63,7 +63,7 @@ An example of a secondary vhost which will redirect to the one shown above.
 
 *Note: The `filename` defaults to the first domain in `server_name`, if you have two vhosts with the same domain, eg. a redirect, you need to manually set the `filename` so the second one doesn't override the first one*
 
-    nginx_remove_default_vhost: false
+    nginx_remove_default_vhost: true
 
 Whether to remove the 'default' virtualhost configuration supplied by Nginx. Useful if you want the base `/` URL to be directed at one of your own virtual hosts configured in a separate .conf file.
 
